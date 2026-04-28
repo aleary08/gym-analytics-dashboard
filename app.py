@@ -33,8 +33,8 @@ def load_data():
 def load_model():
     return train_churn_model()
 
-st.title("🥊 Gym Analytics Dashboard")
-st.markdown("**Powered by Anthony Leary — Combat Sports Tech Specialist**")
+st.title("Gym Analytics Dashboard")
+st.markdown("**Powered by Anthony Leary, Combat Sports Tech Specialist**")
 st.divider()
 
 with st.spinner("Loading data and training model..."):
@@ -100,7 +100,7 @@ with col2:
 st.divider()
 
 # Churn Risk Table
-st.subheader("🚨 At-Risk Members — Immediate Action Required")
+st.subheader("🚨 At-Risk Members, Immediate Action Required")
 
 risk_filter = st.selectbox("Filter by Risk Level", ["All", "High", "Medium", "Low"])
 
